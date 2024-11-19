@@ -11,8 +11,22 @@
 
 <style media="screen">
   body {
+   
+    background-image: url("/assets/lace1.png");
+    background-size: contain;                  
+    /* background-repeat:   no-repeat; */
+    background-position: center center; 
     background-color: black;
   }
+
+  /* @media screen and (min-width: 1080px) {
+  body {
+    background-image: url("/assets/lace1.png");
+    background-size: 25% 25%;    /* background-repeat:   no-repeat; */
+    /* background-position: center center;  */
+    background-color: black;
+  }
+} */
 
   .grid{
    display: grid; 
@@ -21,7 +35,7 @@
   }
 
   .videoContainer {
-    border: 2px ridge whitesmoke;
+    /* border: 2px ridge whitesmoke; */
     height: 85vh;
     max-width: 95%;
 
@@ -54,6 +68,8 @@
 
    }
 
+
+
 </style>
 
 
@@ -63,9 +79,13 @@
   <center>
       <video class="videoContainer" controls>
           <source src="./assets/pinkRoomPastoral.mp4" type="video/mp4">
+          <!-- <source src="./assets/pinkRoomPastoral.ogv" type="video/ogg"/> -->
+          <source src="./assets/pinkRoomPastoral.webm" type="video/webm"/>
         Your browser does not support the video tag.
         </video>
   </center>
+
+
 
 
  
