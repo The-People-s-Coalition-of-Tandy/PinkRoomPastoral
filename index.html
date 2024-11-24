@@ -12,7 +12,7 @@
 <style media="screen">
   body {
    
-    background-image: url("./assets/lace4.png");
+    background-image: url("./assets/lace3_loO_13.png");
     background-size: contain;                  
     /* background-repeat:   no-repeat; */
     background-position: center center; 
@@ -62,24 +62,57 @@
 
    }
 
+   .grid{
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+justify-content: center;
+align-items: center;
+align-content: center;
+   }
 
+   #title{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+  }
+
+@media screen and (max-width: 1350px) {
+  .videoContainer {
+    /* border: 2px ridge whitesmoke; */
+    height: 85vh;
+    max-width: 95%;
+
+    padding: 1%;
+   }
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  #title{
+    position: relative;
+    order: 1;
+    justify-self: center;
+  }
+} 
 
 </style>
 
 
 <body>
 
-
+  <div class="grid">
+    <div class="spacer"></div>
   <center>
       <video class="videoContainer" controls poster="./assets/lace5.png">
-          <source src="./assets/pinkRoomPastoral.mp4" type="video/mp4">
+          <source src="./assets/PRP_FINAL_2_min.mp4" type="video/mp4">
           <!-- <source src="./assets/pinkRoomPastoral.ogv" type="video/ogg"/> -->
-          <source src="./assets/pinkRoomPastoral.webm" type="video/webm"/>
+          <source src="./assets/PRP_FINAL_2_min.webm" type="video/webm"/>
         Your browser does not support the video tag.
         </video>
   </center>
+  <img id="title" src="./assets/PRP_title4.png"  alt="title card for Pink Room Pastoral by Joohee Parke" >
 
-
+</div>
 
 
  
